@@ -1,0 +1,83 @@
+/* Text*/
+h1{
+    font-size: 3em;
+    line-height: 1.5;
+}
+.name{
+    font-family: 'Pacifico', cursive;
+    color: #EB5468;
+}
+
+.top{
+    background-color: rgb(44, 36, 54);
+    color: white;
+    padding: 0;
+}
+.container-fluid{
+    padding: 3% 15%;
+    margin: 0;
+}
+.videos{
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+@media only screen and (max-width: 900px) {
+    .me {
+      display: none;
+    }
+  }
+.me{
+    height: 500px;
+    width: auto;
+  }
+.gallery{
+    background-color: #BEB9DD;
+}
+.contact{
+  text-align: center;
+  color: white;
+  background-color: #2C2436;
+  margin: 0%;
+}
+body {
+    margin: 0;
+  }
+  
+  .image-grid {
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+  
+    box-sizing: border-box;
+    padding: var(--gap);
+  
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+  }
+  
+  .image-grid > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-grid-col-2 {
+    grid-column: span 2;
+  }
+  
+  .image-grid-row-2 {
+    grid-row: span 2;
+  }
+  
+  /* Anything udner 1024px */
+  @media screen and (max-width: 900px) {
+    .image-grid {
+      --num-cols: 2;
+      --row-height: 200px;
+    }
+  }
+  .gallery{
+      padding: 5rem;
+  }
